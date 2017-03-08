@@ -1,0 +1,29 @@
+{
+  "words":[
+        {
+  	  	  "word": "laptop",
+          "category":"Computer",
+          "hint":"also called a notebook"
+        },
+        {
+ 	      "word": "car",
+          "category":"Motor vehicle",
+          "hint":"wheeled, self-powered motor vehicle"
+        },
+        {
+  	      "word": "desk",
+          "category":"Furniture",
+          "hint":"also called table"
+        },
+        {
+  	      "word": "macbook",
+          "category":"Apple",
+          "hint":"apple laptop"
+        },
+        {
+  	      "word": "omega",
+          "category":"Watch",
+          "hint":"founder: Louis Brandt"
+        }
+  ]
+}

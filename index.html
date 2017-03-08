@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Word Guess</title>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="app.js"></script>
+		<script src="js/script.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+	</head>
+	
+	<body ng-app='wordGuess' ng-controller='wordGuessCtrl'>
+		<div class="container bg-info text-center">
+			
+			<header>
+				<h1>WORD GUESS</h1>
+			</header>
+			
+			<p>Use the alphabet below to guess the word, or click hint to get a clue</p>
+			
+			<button type="button" class="btn btn-primary btn-sm">a</button>
+			<button type="button" class="btn btn-primary btn-sm">b</button>
+			<button type="button" class="btn btn-primary btn-sm">c</button>
+			<button type="button" class="btn btn-primary btn-sm">d</button>
+			<button type="button" class="btn btn-primary btn-sm">e</button>
+			<button type="button" class="btn btn-primary btn-sm">f</button>
+			<button type="button" class="btn btn-primary btn-sm">g</button>
+			<button type="button" class="btn btn-primary btn-sm">h</button>
+			<button type="button" class="btn btn-primary btn-sm">i</button>
+			<button type="button" class="btn btn-primary btn-sm">j</button>
+			<button type="button" class="btn btn-primary btn-sm">k</button>
+			<button type="button" class="btn btn-primary btn-sm">l</button>
+			<button type="button" class="btn btn-primary btn-sm">m</button>
+			<button type="button" class="btn btn-primary btn-sm">n</button>
+			<button type="button" class="btn btn-primary btn-sm">o</button>
+			<button type="button" class="btn btn-primary btn-sm">p</button>
+			<button type="button" class="btn btn-primary btn-sm">q</button>
+			<button type="button" class="btn btn-primary btn-sm">r</button>
+			<button type="button" class="btn btn-primary btn-sm">s</button>
+			<button type="button" class="btn btn-primary btn-sm">t</button>
+			<button type="button" class="btn btn-primary btn-sm">u</button>
+			<button type="button" class="btn btn-primary btn-sm">v</button>
+			<button type="button" class="btn btn-primary btn-sm">w</button>
+			<button type="button" class="btn btn-primary btn-sm">x</button>
+			<button type="button" class="btn btn-primary btn-sm">y</button>
+			<button type="button" class="btn btn-primary btn-sm">z</button>
+			
+			<div class="panel panel-success">
+				
+				<h4 class="panel-heading">The Chosen Category Is {{ category }}</h4>
+			
+					<div class="panel-body">
+						
+						<p id="answer"></p>
+
+						<p>You have {{ lives }} lives</p>
+
+						<p>Clue {{ hint }}</p>
+						
+					</div>
+					
+			</div>
+			
+			<section>
+				
+				<a class="btn btn-success" ng-click='Hint()'>Hint</a>
+				<a class="btn btn-danger" ng-click='again()'>Play Again</a>
+				
+			</section>
+			
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
